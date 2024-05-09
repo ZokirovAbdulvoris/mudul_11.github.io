@@ -1,4 +1,4 @@
-from aiogram import Dispatcher, types
+from aiogram import Dispatcher, types, F
 from aiogram.filters import CommandStart
 
 from keybords import app_kb
@@ -10,7 +10,9 @@ async def start(message: types.Message):
     await message.answer("Salom", reply_markup=app_kb)
 
 
-
+@dp.message(F.func(lambda message: message.web_app_data.data == "TestMessage"))
+async def get_btn(message: types.Message):
+    await message.answer(message.web_app_data.data)
 
 
 

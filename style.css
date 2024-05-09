@@ -4,11 +4,11 @@ body {
     font-size: 18px;
     color: var(--tg-theme-bg-color);
     background: var(--tg-theme-bg-color)
-
+}
 .container{
     max-width: 400px;
 }
-}
+
 .inner {
     display: grid;
     grid-template-columns: 1fr 1fr ;
