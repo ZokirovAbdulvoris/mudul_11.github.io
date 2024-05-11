@@ -16,12 +16,12 @@ let item = " "
 
 btn1.addEventListener("click", function () {
     tg.MainButton.setText("Burger bosildi");
-    item = "Burger bosildi";
+    item = "Burger bosildi narxi 5$";
     tg.MainButton.show();
 });
 btn2.addEventListener("click", function () {
     tg.MainButton.setText("KFC bosildi");
-    item = "KFC bosildi";
+    item = "KFC bosildi narxi 6$";
     tg.MainButton.show();
 });
 btn3.addEventListener("click", function () {
@@ -30,8 +30,8 @@ btn3.addEventListener("click", function () {
     tg.MainButton.show();
 });
 btn4.addEventListener("click", function () {
-    tg.MainButton.setText("Fri bosildi");
-    item = "Fri bosildi";
+    tg.MainButton.setText("Fri bosildi ");
+    item = "Fri bosildi narxi 3$";
 
     tg.MainButton.show();
 });
