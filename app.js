@@ -38,40 +38,40 @@ abtn1.addEventListener("click", function () {
 rbtn1.addEventListener("click", function () {
 
     count.innerText = num_count -= 1;
-    count.style.display = "block";
+    count.style.display = "inline-block";
 })
 abtn2.addEventListener("click", function () {
 
     count1.innerText = num_count1 += 1;
-    count1.style.display = "block";
+    count1.style.display = "inline-block";
 })
 
 rbtn2.addEventListener("click", function () {
 
     count1.innerText = num_count1 -= 1;
-    count1.style.display = "block";
+    count1.style.display = "inline-block";
 })
 abtn3.addEventListener("click", function () {
 
     count2.innerText = num_count += 1;
-    count2.style.display = "block";
+    count2.style.display = "inline-block";
 })
 
 rbtn3.addEventListener("click", function () {
 
     count2.innerText = num_count -= 1;
-    count2.style.display = "block";
+    count2.style.display = "inline-block";
 })
 abtn4.addEventListener("click", function () {
 
     count3.innerText = num_count += 1;
-    count3.style.display = "block";
+    count3.style.display = "inline-block";
 })
 
 rbtn4.addEventListener("click", function () {
 
     count3.innerText = num_count -= 1;
-    count3.style.display = "block";
+    count3.style.display = "inline-block";
 })
 
 
@@ -85,15 +85,15 @@ btn1.addEventListener("click", function () {
 );
 
 btn2.addEventListener("click", function () {
-        tg.MainButton.setText("Hot-Dog bosildi");
-        item = " Nomi- Hot-Dog ," +
+        tg.MainButton.setText("Lavash bosildi");
+        item = " Nomi- Lavash ," +
             "Narxi- 2.48$";
         tg.MainButton.show();
     }
 );
 btn3.addEventListener("click", function () {
-        tg.MainButton.setText("Pizza bosildi");
-        item = " Nomi- Pizza ," +
+        tg.MainButton.setText("KFC bosildi");
+        item = " Nomi- KFC ," +
             "Narxi- 3.99$";
 
         tg.MainButton.show();
