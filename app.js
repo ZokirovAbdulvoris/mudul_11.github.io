@@ -32,7 +32,7 @@ count3 = document.getElementById("count3")
 abtn1.addEventListener("click", function () {
 
     count.innerText = num_count += 1;
-    count.style.display = "block";
+    count.style.display = "inline-block";
 })
 
 rbtn1.addEventListener("click", function () {
