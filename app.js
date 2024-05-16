@@ -31,7 +31,7 @@ rbtn1.addEventListener("click", function () {
     tg.MainButton.setText("Burger");
     tg.MainButton.show();
 });
-
+// ------------------2--------------------
 
 count2 = document.getElementById("count2");
 rbtn2 = document.getElementById("rbtn2");
@@ -59,7 +59,7 @@ abtn2.addEventListener("click", function (){
     tg.MainButton.show();
 });
 
-
+// ------------------3--------------------
 
 count3 = document.getElementById("count3");
 rbtn3 = document.getElementById("rbtn3");
@@ -88,7 +88,7 @@ abtn3.addEventListener("click", function (){
     tg.MainButton.show();
 });
 
-
+// -------------------4-------------------
 
 count4 = document.getElementById("count4");
 rbtn4 = document.getElementById("rbtn4");
@@ -103,7 +103,7 @@ rbtn4.addEventListener("click", function () {
     count4.style.display = "inline-block";
     item4 = "FRI/5/" + count4.innerText;
 
-    tg.MainButton.setText("FRI");
+    tg.MainButton.setText("PIZZA");
     tg.MainButton.show();
 });
 
@@ -114,7 +114,7 @@ abtn4.addEventListener("click", function (){
     count4.style.display = "inline-block";
     item4 = "FRI/5/" + count4.innerText;
 
-    tg.MainButton.setText("FRI");
+    tg.MainButton.setText("PIZZA");
     tg.MainButton.show();
 });
 
