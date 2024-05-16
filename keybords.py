@@ -1,8 +1,12 @@
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, WebAppInfo
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, WebAppInfo, InlineKeyboardMarkup, InlineKeyboardButton
 
-web_up = WebAppInfo(url="https://zokirovabdulvoris.github.io/mudul_11.github.io/")
-
+web_app = WebAppInfo(url='https://zokirovabdulvoris.github.io/mudul_11.github.io/')
 
 app_kb = ReplyKeyboardMarkup(keyboard=[
-    [KeyboardButton(text='Mini Up', web_app=web_up)]
+    [KeyboardButton(text='Mini App', web_app=web_app)]
 ], resize_keyboard=True)
+
+buy_ikb = InlineKeyboardMarkup(inline_keyboard=[
+
+    [InlineKeyboardButton(text="To'lov", callback_data='buy')],
+])
