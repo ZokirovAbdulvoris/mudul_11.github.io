@@ -123,12 +123,12 @@ abtn5 = document.getElementById("abtn5");
 let item5 = "";
 let n_count5 = 0;
 rbtn5.addEventListener("click", function () {
-    if (n_count4 > 0) {
-        count4.innerText = n_count5 -= 1;
+    if (n_count5 > 0) {
+        count5.innerText = n_count5 -= 1;
     }
 
     count5.style.display = "inline-block";
-    item4 = "FRI/90000/" + count4.innerText;
+    item4 = "FRI/90000/" + count5.innerText;
 
     tg.MainButton.setText("Tolov");
     tg.MainButton.show();
@@ -152,12 +152,12 @@ abtn6 = document.getElementById("abtn6");
 let item6 = "";
 let n_count6 = 0;
 rbtn6.addEventListener("click", function () {
-    if (n_count4 > 0) {
-        count4.innerText = n_count6 -= 1;
+    if (n_count6 > 0) {
+        count6.innerText = n_count6 -= 1;
     }
 
     count6.style.display = "inline-block";
-    item4 = "FRI/90000/" + count4.innerText;
+    item4 = "Cola/12000/" + count6.innerText;
 
     tg.MainButton.setText("Tolov");
     tg.MainButton.show();
