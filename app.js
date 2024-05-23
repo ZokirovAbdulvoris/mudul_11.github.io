@@ -99,7 +99,7 @@ rbtn4.addEventListener("click", function () {
     }
 
     count4.style.display = "inline-block";
-    item4 = "FRI/10000/" + count4.innerText;
+    item4 = "FRI/50000/" + count4.innerText;
 
     tg.MainButton.setText("Tolov");
     tg.MainButton.show();
@@ -109,14 +109,48 @@ rbtn4.addEventListener("click", function () {
 abtn4.addEventListener("click", function () {
     count4.innerText = n_count4 += 1;
     count4.style.display = "inline-block";
-    item4 = "FRI/10000/" + count4.innerText;
+    item4 = "FRI/50000/" + count4.innerText;
+
+    tg.MainButton.setText("Tolov");
+    tg.MainButton.show();
+});
+
+// -------------------5-------------------
+
+count5 = document.getElementById("count4");
+rbtn5 = document.getElementById("rbtn4");
+abtn5 = document.getElementById("abtn4");
+let item5 = "";
+let n_count5 = 0;
+rbtn5.addEventListener("click", function () {
+    if (n_count4 > 0) {
+        count4.innerText = n_count5 -= 1;
+    }
+    rbtn5.addEventListener("click", function () {
+    if (n_count4 > 0) {
+        count4.innerText = n_count4 -= 1;
+    }
+
+    count5.style.display = "inline-block";
+    item4 = "FRI/90000/" + count4.innerText;
 
     tg.MainButton.setText("Tolov");
     tg.MainButton.show();
 });
 
 
+abtn5.addEventListener("click", function () {
+    count5.innerText = n_count5 += 1;
+    count5.style.display = "inline-block";
+    item4 = "PIZZA/90000/" + count5.innerText;
+
+    tg.MainButton.setText("Tolov");
+    tg.MainButton.show();
+});
+
+
+
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-    data = item1 + "|" + item2 + "|" + item3 + "|" + item4
+    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item5
     tg.sendData(data);
 });
