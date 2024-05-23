@@ -117,9 +117,9 @@ abtn4.addEventListener("click", function () {
 
 // -------------------5-------------------
 
-count5 = document.getElementById("count4");
-rbtn5 = document.getElementById("rbtn4");
-abtn5 = document.getElementById("abtn4");
+count5 = document.getElementById("count5");
+rbtn5 = document.getElementById("rbtn5");
+abtn5 = document.getElementById("abtn5");
 let item5 = "";
 let n_count5 = 0;
 rbtn5.addEventListener("click", function () {
