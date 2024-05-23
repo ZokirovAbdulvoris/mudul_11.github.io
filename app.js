@@ -126,10 +126,6 @@ rbtn5.addEventListener("click", function () {
     if (n_count4 > 0) {
         count4.innerText = n_count5 -= 1;
     }
-    rbtn5.addEventListener("click", function () {
-    if (n_count4 > 0) {
-        count4.innerText = n_count4 -= 1;
-    }
 
     count5.style.display = "inline-block";
     item4 = "FRI/90000/" + count4.innerText;
@@ -147,7 +143,6 @@ abtn5.addEventListener("click", function () {
     tg.MainButton.setText("Tolov");
     tg.MainButton.show();
 });
-
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
