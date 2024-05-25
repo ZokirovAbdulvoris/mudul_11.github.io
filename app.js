@@ -212,9 +212,9 @@ rbtn8 = document.getElementById("rbtn8");
 abtn8 = document.getElementById("abtn8");
 let item8 = "";
 let n_count8 = 0;
-rbtn7.addEventListener("click", function () {
+rbtn8.addEventListener("click", function () {
     if (n_count8 > 0) {
-        count7.innerText = n_count8 -= 1;
+        count8.innerText = n_count8 -= 1;
     }
 
     count8.style.display = "inline-block";
