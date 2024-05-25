@@ -128,7 +128,7 @@ rbtn5.addEventListener("click", function () {
     }
 
     count5.style.display = "inline-block";
-    item4 = "FRI/90000/" + count5.innerText;
+    item5 = "FRI/90000/" + count5.innerText;
 
     tg.MainButton.setText("Tolov");
     tg.MainButton.show();
@@ -138,7 +138,7 @@ rbtn5.addEventListener("click", function () {
 abtn5.addEventListener("click", function () {
     count5.innerText = n_count5 += 1;
     count5.style.display = "inline-block";
-    item4 = "PIZZA/90000/" + count5.innerText;
+    item5 = "PIZZA/90000/" + count5.innerText;
 
     tg.MainButton.setText("Tolov");
     tg.MainButton.show();
@@ -157,7 +157,7 @@ rbtn6.addEventListener("click", function () {
     }
 
     count6.style.display = "inline-block";
-    item4 = "Cola/12000/" + count6.innerText;
+    item6 = "Cola/12000/" + count6.innerText;
 
     tg.MainButton.setText("Tolov");
     tg.MainButton.show();
@@ -167,14 +167,44 @@ rbtn6.addEventListener("click", function () {
 abtn6.addEventListener("click", function () {
     count6.innerText = n_count6 += 1;
     count6.style.display = "inline-block";
-    item4 = "Cola/12000/" + count6.innerText;
+    item6 = "Cola/12000/" + count6.innerText;
 
     tg.MainButton.setText("Tolov");
     tg.MainButton.show();
 });
 
 
+
+// -------------------7-------------------
+
+count7 = document.getElementById("count7");
+rbtn7 = document.getElementById("rbtn7");
+abtn7 = document.getElementById("abtn7");
+let item7 = "";
+let n_count7 = 0;
+rbtn7.addEventListener("click", function () {
+    if (n_count7 > 0) {
+        count7.innerText = n_count7 -= 1;
+    }
+
+    count6.style.display = "inline-block";
+    item7 = "Hot-Dog/14000/" + count7.innerText;
+
+    tg.MainButton.setText("Tolov");
+    tg.MainButton.show();
+});
+
+
+abtn7.addEventListener("click", function () {
+    count7.innerText = n_count7 += 1;
+    count7.style.display = "inline-block";
+    item7 = "Hot-Dog/14000/" + count7.innerText;
+
+    tg.MainButton.setText("Tolov");
+    tg.MainButton.show();
+});
+
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item5 + "|" + item6
+    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item5 + "|" + item6 + "|" + item7 + "|"
     tg.sendData(data);
 });
