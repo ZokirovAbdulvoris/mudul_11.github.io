@@ -234,7 +234,38 @@ abtn8.addEventListener("click", function () {
     tg.MainButton.show();
 });
 
+
+
+// -------------------9-------------------
+
+count9 = document.getElementById("count9");
+rbtn9 = document.getElementById("rbtn9");
+abtn9 = document.getElementById("abtn9");
+let item9 = "";
+let n_count9 = 0;
+rbtn8.addEventListener("click", function () {
+    if (n_count9 > 0) {
+        count8.innerText = n_count9 -= 1;
+    }
+
+    count9.style.display = "inline-block";
+    item9 = "Kurasan/170000/" + count9.innerText;
+
+    tg.MainButton.setText("Tolov");
+    tg.MainButton.show();
+});
+
+
+abtn9.addEventListener("click", function () {
+    count8.innerText = n_count8 += 1;
+    count8.style.display = "inline-block";
+    item8 = "Hot-Dog/14000/" + count9.innerText;
+
+    tg.MainButton.setText("Tolov");
+    tg.MainButton.show();
+});
+
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item5 + "|" + item6 + "|" + item7 + "|" + item8 + "|"
+    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item5 + "|" + item6 + "|" + item7 + "|" + item8 + "|" + item9 + "|"
     tg.sendData(data);
 });
