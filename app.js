@@ -257,9 +257,9 @@ rbtn8.addEventListener("click", function () {
 
 
 abtn9.addEventListener("click", function () {
-    count8.innerText = n_count8 += 1;
-    count8.style.display = "inline-block";
-    item8 = "Hot-Dog/14000/" + count9.innerText;
+    count9.innerText = n_count9 += 1;
+    count9.style.display = "inline-block";
+    item9 = "/170000/" + count9.innerText;
 
     tg.MainButton.setText("Tolov");
     tg.MainButton.show();
